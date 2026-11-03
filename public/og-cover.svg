@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs><linearGradient id="bg" x1="120" y1="30" x2="1110" y2="660"><stop stop-color="#0D1221"/><stop offset=".55" stop-color="#08090D"/><stop offset="1" stop-color="#111123"/></linearGradient><linearGradient id="blue" x1="255" y1="230" x2="920" y2="484"><stop stop-color="#8CB3FF"/><stop offset=".6" stop-color="#4C83FF"/><stop offset="1" stop-color="#B7A2FF"/></linearGradient><radialGradient id="glow"><stop stop-color="#3766F5" stop-opacity=".35"/><stop offset="1" stop-color="#3766F5" stop-opacity="0"/></radialGradient></defs>
+  <path fill="url(#bg)" d="M0 0h1200v630H0z"/><circle cx="890" cy="270" r="430" fill="url(#glow)"/>
+  <path stroke="#fff" stroke-opacity=".06" d="M0 540h1200M0 570h1200M1060 0v630M1090 0v630"/>
+  <text x="92" y="102" fill="#91A2BF" font-family="Arial,sans-serif" font-size="20" letter-spacing="4">SAAD DEVELOPER  /  SELECTED DIGITAL WORK</text>
+  <text x="84" y="315" fill="#F7F8FC" font-family="Arial,sans-serif" font-size="104" font-weight="700" letter-spacing="-6">WEB, WITH</text>
+  <text x="84" y="425" fill="url(#blue)" font-family="Arial,sans-serif" font-size="104" font-weight="700" letter-spacing="-6">INTENTION.</text>
+  <text x="94" y="500" fill="#ADB5C6" font-family="Arial,sans-serif" font-size="23">Saad — Web Developer</text>
+  <circle cx="1060" cy="530" r="9" fill="#7D9CFF"/><text x="1082" y="538" fill="#A6B0C5" font-family="Arial,sans-serif" font-size="17">AVAILABLE FOR PROJECTS</text>
+</svg>
