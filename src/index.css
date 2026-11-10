@@ -825,3 +825,48 @@ img, svg { display: block; }
   .loader-mark, .loader-name, .loader-track, .loader-track span { animation: none !important; }
   .brand:hover .brand-mark, .button--primary:hover, .button--secondary:hover, .service-card:hover, .project-card:hover, .skill-card:hover { transform: none !important; }
 }
+
+/* Hero visual: subtle pointer hover response */
+.hero-visual .hero-core {
+  transition: transform .55s cubic-bezier(.2,.8,.2,1), border-color .4s ease, box-shadow .55s ease;
+}
+.hero-visual .hero-visual__halo {
+  transition: opacity .5s ease, filter .5s ease;
+}
+.hero-visual .orbit,
+.hero-visual .orbit__node,
+.hero-visual .orbit__spark {
+  transition: border-color .4s ease, box-shadow .4s ease, opacity .4s ease;
+}
+.hero-visual:hover .hero-core {
+  transform: perspective(1000px) rotateY(-2deg) rotateX(1deg) translateY(-5px) scale(1.015);
+  border-color: rgba(112,240,189,.48);
+  box-shadow: 0 36px 105px rgba(0,0,0,.42), 0 0 58px rgba(56,217,163,.2), inset 0 1px 0 rgba(255,255,255,.1);
+}
+.hero-visual:hover .hero-visual__halo {
+  opacity: 1;
+  filter: blur(18px);
+}
+.hero-visual:hover .orbit {
+  border-color: rgba(112,240,189,.3);
+}
+.hero-visual:hover .orbit__node,
+.hero-visual:hover .orbit__spark {
+  box-shadow: 0 0 18px rgba(56,217,163,.58);
+}
+.hero-visual:hover .hero-particles span {
+  animation-duration: 4.8s;
+  opacity: .9;
+}
+.hero-visual:hover .hero-note,
+.hero-visual:hover .hero-coordinate {
+  color: #c5f5df;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual .hero-core,
+  .hero-visual .hero-visual__halo,
+  .hero-visual .orbit,
+  .hero-visual .orbit__node,
+  .hero-visual .orbit__spark { transition: none; }
+  .hero-visual:hover .hero-core { transform: none; }
+}
