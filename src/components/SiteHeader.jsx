@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowUpRight, Menu, Moon, Sun, X } from 'lucide-react'
 import { navigation } from '../data.js'
+import { BrandMark } from './BrandMark.jsx'
 
 export function SiteHeader({ theme, setTheme, reduceMotion }) {
   const [activeSection, setActiveSection] = useState('home')
@@ -40,7 +41,7 @@ export function SiteHeader({ theme, setTheme, reduceMotion }) {
     <header className="site-header">
       <div className="header-inner container">
         <a className="brand" href="#home" onClick={closeMenu} aria-label="Saad Developer, home">
-          <span className="brand-mark" aria-hidden="true">S<span>.</span></span>
+          <span className="brand-mark"><BrandMark className="brand-mark__icon" /></span>
           <span className="brand-wordmark">SAAD <span>DEVELOPER</span></span>
         </a>
 

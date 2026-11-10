@@ -17,6 +17,7 @@ import {
   Terminal,
 } from 'lucide-react'
 import { projects, services, skills } from './data.js'
+import { BrandMark } from './components/BrandMark.jsx'
 
 const easeOut = [0.22, 1, 0.36, 1]
 
@@ -231,7 +232,7 @@ export function AboutSection({ reduceMotion }) {
               </div>
               <div className="profile-card__footer"><span><span className="online-dot" /> SAAD</span><span>WEB DEVELOPER</span></div>
             </div>
-            <div className="about-orbit" aria-hidden="true"><span>S</span><i /></div>
+            <div className="about-orbit" aria-hidden="true"><BrandMark className="about-orbit__mark" /><i /></div>
             <span className="profile-caption"><MousePointer2 size={13} /> ALWAYS CURIOUS ABOUT WHAT’S NEXT</span>
           </motion.div>
         </div>
@@ -549,7 +550,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-main">
           <div className="footer-brand-block">
-            <a className="brand footer-brand" href="#home" aria-label="Saad Developer, back to home"><span className="brand-mark" aria-hidden="true">S<span>.</span></span><span className="brand-wordmark">SAAD <span>DEVELOPER</span></span></a>
+            <a className="brand footer-brand" href="#home" aria-label="Saad Developer, back to home"><span className="brand-mark"><BrandMark className="brand-mark__icon" /></span><span className="brand-wordmark">SAAD <span>DEVELOPER</span></span></a>
             <p>Thoughtful websites.<br />Made with intention.</p>
           </div>
           <div className="footer-nav-block"><span className="footer-label">EXPLORE</span><nav aria-label="Footer navigation">{['About', 'Services', 'Projects', 'Skills', 'Contact'].map((name) => <a href={`#${name.toLowerCase()}`} key={name}>{name}<ArrowUpRight size={12} /></a>)}</nav></div>

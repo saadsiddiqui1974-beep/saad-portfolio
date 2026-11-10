@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, MotionConfig, motion, useReducedMotion } from 'framer-motion'
-import { ArrowUp, Loader2 } from 'lucide-react'
+import { ArrowUp } from 'lucide-react'
+import { BrandMark } from './components/BrandMark.jsx'
 import { SiteHeader } from './components/SiteHeader.jsx'
 import {
   AboutSection,
@@ -93,9 +94,9 @@ function LoadingScreen({ reduceMotion }) {
       role="status"
       aria-label="Loading portfolio"
     >
-      <div className="loader-mark" aria-hidden="true"><span>S</span></div>
+      <div className="loader-mark"><BrandMark className="brand-mark__icon" /></div>
       <div className="loader-name">SAAD <span>DEVELOPER</span></div>
-      {!reduceMotion && <Loader2 className="loader-spin" size={16} aria-hidden="true" />}
+      <div className="loader-track" aria-hidden="true"><span /></div>
     </motion.div>
   )
 }
@@ -153,7 +154,7 @@ export default function App() {
   }, [theme])
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), reduceMotion ? 80 : 780)
+    const timer = window.setTimeout(() => setLoading(false), reduceMotion ? 80 : 1050)
     return () => window.clearTimeout(timer)
   }, [reduceMotion])
 
