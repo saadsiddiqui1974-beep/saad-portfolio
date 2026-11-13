@@ -5,6 +5,7 @@ import {
   Layers,
   PanelsTopLeft,
   Smartphone,
+  ShoppingBag,
 } from 'lucide-react'
 
 export const navigation = [
@@ -54,6 +55,13 @@ export const services = [
   },
   {
     number: '06',
+    title: 'Shopify store development',
+    description: 'Shopify store setup and theme customization, with organized products, collections, and responsive storefront layouts.',
+    icon: ShoppingBag,
+    tags: ['Shopify', 'Theme customization', 'E-commerce'],
+  },
+  {
+    number: '07',
     title: 'Website refreshes',
     description: 'A considered redesign to give an existing site a clearer structure, sharper visual language, and a fresh feel.',
     icon: Layers,
@@ -100,4 +108,6 @@ export const skills = [
   { name: 'Responsive Web Design', group: 'FRONTEND', symbol: '↔' },
   { name: 'Java', group: 'BACKEND', symbol: 'J' },
   { name: 'Spring Boot', group: 'BACKEND', symbol: 'SB' },
+  { name: 'Shopify', group: 'E-COMMERCE', symbol: 'S' },
+  { name: 'Shopify Theme Customization', group: 'E-COMMERCE', symbol: 'ST' },
 ]
